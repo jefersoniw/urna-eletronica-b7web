@@ -15,6 +15,7 @@
      width: 500px;
      height: 320px;
      background: linear-gradient(#E8E8E8, #C1C1C1);
+     /*CONTINUAR DAQUI 03:30*/
  }
  .teclado {
     background-color: #403A3A;
@@ -38,4 +39,25 @@
  .teclado-linha {
      display: flex;
      justify-content: center;
+     align-items: flex-end;
+ }
+
+ .botao-branco {
+    background-color: white;
+    color: black;
+    font-size: 15px;
+ }
+
+ .botao-corrige {
+    background-color: #f09046;
+    color: black;
+    font-size: 15px;
+ }
+
+ .botao-confirma {
+    background-color: #48c079;
+    color: black;
+    font-size: 15px;
+    width: 90px;
+    height: 50px;
  }
