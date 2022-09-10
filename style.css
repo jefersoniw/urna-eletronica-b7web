@@ -80,8 +80,7 @@
      flex: 1;
      display: flex;
      flex-direction: column;
-    padding-left: 20px;
-
+     padding-left: 20px;
  }
 
  .d-1-1 {
@@ -135,8 +134,8 @@
      width: 100%;
  }
  .d-1-image.small {
-     width: 70%;
-     font-size: 14px;
+     width: 80%;
+     font-size: 12px;
  }
 
 
