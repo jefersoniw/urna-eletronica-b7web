@@ -25,6 +25,7 @@ botaoConfirma.addEventListener('click', e => {
 let etapaAtual = 0
 let numero = ''
 let votoBranco = false;
+let votos = [];
 
 function comecarEtapa() {
   let etapa = etapas[etapaAtual]
@@ -32,6 +33,7 @@ function comecarEtapa() {
   let numeroHtml = ''
   numero = '';
   votoBranco = false;
+
 
   for (let i = 0; i < etapa.numeros; i++) {
     if (i === 0) {
@@ -127,10 +129,18 @@ function confirma() {
   if(votoBranco === true){
 
     votoConfirmado = true;
+    votos.push({
+      etapa: etapas[etapaAtual].titulo,
+      voto: 'branco'
+    });
 
   }else if(numero.length === etapa.numeros) {
 
     votoConfirmado = true;
+    votos.push({
+      etapa: etapas[etapaAtual].titulo,
+      voto: numero
+    });
 
   }
 
@@ -139,7 +149,8 @@ function confirma() {
     if(etapas[etapaAtual] !== undefined){
       comecarEtapa();
     }else{
-      descricao.innerHTML = '<div class="aviso--grande pisca">FIM</div>';
+      document.querySelector('.tela').innerHTML = '<div class="aviso--gigante pisca">FIM</div>';
+      console.log(votos);
     }
   }
 }

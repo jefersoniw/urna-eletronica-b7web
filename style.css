@@ -96,6 +96,8 @@
 }
 .d-1-3 {
     height: 50px;
+    display: flex;
+    align-items: center;
 }
 .numero {
     display: inline-block;
@@ -149,4 +151,13 @@
  .aviso--grande {
      font-size: 40px;
      font-weight: bold;
+ }
+
+ .aviso--gigante {
+    font-size: 80px;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
