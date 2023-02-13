@@ -40,6 +40,16 @@ let etapas = [
           { url: '84.jpg', legenda: 'Prefeito' },
           { url: '84_2.jpg', legenda: 'Vice-Prefeito', small: false }
         ]
+      },
+      {
+        numero: '25',
+        nome: 'ACM NETO',
+        partido: 'DEM',
+        vice: 'Roberto me Chupe',
+        fotos: [
+          { url: 'acm.jpg', legenda: 'Prefeito' },
+          { url: 'roberto.jpg', legenda: 'Vice-Prefeito', small: false }
+        ]
       }
     ]
   }
